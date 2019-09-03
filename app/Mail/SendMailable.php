@@ -11,16 +11,16 @@ class SendMailable extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $name;
+    public $templateInfo;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($name)
+    public function __construct($templateInfo)
     {
-        $this->name = $name;
+        $this->templateInfo = $templateInfo;
     }
 
     /**
