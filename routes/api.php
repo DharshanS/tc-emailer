@@ -21,4 +21,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 
-Route::post('/send/email', 'HomeController@sendEmail');
+Route::post('/send', 'HomeController@sendEmail');
